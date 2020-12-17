@@ -40,6 +40,8 @@ void PMD_Initialize(void)
 
 void PIN_MANAGER_Initialize(void)
 {
+    PORTA=0;
+    
     /**
     LATx registers
     */

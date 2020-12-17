@@ -41,6 +41,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22170
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 22170: extern volatile unsigned char PMD5 __attribute__((address(0x79B)));
 [v _PMD5 `Vuc ~T0 @X0 0 e@1947 ]
+"385
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 385: extern volatile unsigned char PORTA __attribute__((address(0x00C)));
+[v _PORTA `Vuc ~T0 @X0 0 e@12 ]
 "778
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 778: extern volatile unsigned char LATA __attribute__((address(0x016)));
 [v _LATA `Vuc ~T0 @X0 0 e@22 ]
@@ -1759,88 +1762,91 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _PIN_MANAGER_Initialize ]
 [f ]
-"46
-[; ;initialize.c: 46:     LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
-"47
-[; ;initialize.c: 47:     LATB = 0x00;
-[e = _LATB -> -> 0 `i `uc ]
+"43
+[; ;initialize.c: 43:     PORTA=0;
+[e = _PORTA -> -> 0 `i `uc ]
 "48
-[; ;initialize.c: 48:     LATC = 0x00;
+[; ;initialize.c: 48:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
+"49
+[; ;initialize.c: 49:     LATB = 0x00;
+[e = _LATB -> -> 0 `i `uc ]
+"50
+[; ;initialize.c: 50:     LATC = 0x00;
 [e = _LATC -> -> 0 `i `uc ]
-"53
-[; ;initialize.c: 53:     TRISA = 0x00;
-[e = _TRISA -> -> 0 `i `uc ]
-"54
-[; ;initialize.c: 54:     TRISB = 0xFF;
-[e = _TRISB -> -> 255 `i `uc ]
 "55
-[; ;initialize.c: 55:     TRISC = 0xFF;
+[; ;initialize.c: 55:     TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
+"56
+[; ;initialize.c: 56:     TRISB = 0xFF;
+[e = _TRISB -> -> 255 `i `uc ]
+"57
+[; ;initialize.c: 57:     TRISC = 0xFF;
 [e = _TRISC -> -> 255 `i `uc ]
-"60
-[; ;initialize.c: 60:     ANSELC = 0xE7;
-[e = _ANSELC -> -> 231 `i `uc ]
-"61
-[; ;initialize.c: 61:     ANSELB = 0xFF;
-[e = _ANSELB -> -> 255 `i `uc ]
 "62
-[; ;initialize.c: 62:     ANSELA = 0x00;
+[; ;initialize.c: 62:     ANSELC = 0xE7;
+[e = _ANSELC -> -> 231 `i `uc ]
+"63
+[; ;initialize.c: 63:     ANSELB = 0xFF;
+[e = _ANSELB -> -> 255 `i `uc ]
+"64
+[; ;initialize.c: 64:     ANSELA = 0x00;
 [e = _ANSELA -> -> 0 `i `uc ]
-"67
-[; ;initialize.c: 67:     WPUE = 0x00;
-[e = _WPUE -> -> 0 `i `uc ]
-"68
-[; ;initialize.c: 68:     WPUB = 0x00;
-[e = _WPUB -> -> 0 `i `uc ]
 "69
-[; ;initialize.c: 69:     WPUA = 0x00;
-[e = _WPUA -> -> 0 `i `uc ]
+[; ;initialize.c: 69:     WPUE = 0x00;
+[e = _WPUE -> -> 0 `i `uc ]
 "70
-[; ;initialize.c: 70:     WPUC = 0x00;
+[; ;initialize.c: 70:     WPUB = 0x00;
+[e = _WPUB -> -> 0 `i `uc ]
+"71
+[; ;initialize.c: 71:     WPUA = 0x00;
+[e = _WPUA -> -> 0 `i `uc ]
+"72
+[; ;initialize.c: 72:     WPUC = 0x00;
 [e = _WPUC -> -> 0 `i `uc ]
-"75
-[; ;initialize.c: 75:     ODCONA = 0x00;
-[e = _ODCONA -> -> 0 `i `uc ]
-"76
-[; ;initialize.c: 76:     ODCONB = 0x00;
-[e = _ODCONB -> -> 0 `i `uc ]
 "77
-[; ;initialize.c: 77:     ODCONC = 0x00;
+[; ;initialize.c: 77:     ODCONA = 0x00;
+[e = _ODCONA -> -> 0 `i `uc ]
+"78
+[; ;initialize.c: 78:     ODCONB = 0x00;
+[e = _ODCONB -> -> 0 `i `uc ]
+"79
+[; ;initialize.c: 79:     ODCONC = 0x00;
 [e = _ODCONC -> -> 0 `i `uc ]
-"82
-[; ;initialize.c: 82:     SLRCONA = 0xFF;
-[e = _SLRCONA -> -> 255 `i `uc ]
-"83
-[; ;initialize.c: 83:     SLRCONB = 0xFF;
-[e = _SLRCONB -> -> 255 `i `uc ]
 "84
-[; ;initialize.c: 84:     SLRCONC = 0xFF;
+[; ;initialize.c: 84:     SLRCONA = 0xFF;
+[e = _SLRCONA -> -> 255 `i `uc ]
+"85
+[; ;initialize.c: 85:     SLRCONB = 0xFF;
+[e = _SLRCONB -> -> 255 `i `uc ]
+"86
+[; ;initialize.c: 86:     SLRCONC = 0xFF;
 [e = _SLRCONC -> -> 255 `i `uc ]
-"89
-[; ;initialize.c: 89:     INLVLA = 0x00;
-[e = _INLVLA -> -> 0 `i `uc ]
-"90
-[; ;initialize.c: 90:     INLVLB = 0xFF;
-[e = _INLVLB -> -> 255 `i `uc ]
 "91
-[; ;initialize.c: 91:     INLVLC = 0xFF;
-[e = _INLVLC -> -> 255 `i `uc ]
+[; ;initialize.c: 91:     INLVLA = 0x00;
+[e = _INLVLA -> -> 0 `i `uc ]
 "92
-[; ;initialize.c: 92:     INLVLE = 0x08;
-[e = _INLVLE -> -> 8 `i `uc ]
+[; ;initialize.c: 92:     INLVLB = 0xFF;
+[e = _INLVLB -> -> 255 `i `uc ]
+"93
+[; ;initialize.c: 93:     INLVLC = 0xFF;
+[e = _INLVLC -> -> 255 `i `uc ]
 "94
-[; ;initialize.c: 94:     SSP1CLKPPS = 0x13;
-[e = _SSP1CLKPPS -> -> 19 `i `uc ]
-"95
-[; ;initialize.c: 95:     RC3PPS = 0x14;
-[e = _RC3PPS -> -> 20 `i `uc ]
+[; ;initialize.c: 94:     INLVLE = 0x08;
+[e = _INLVLE -> -> 8 `i `uc ]
 "96
-[; ;initialize.c: 96:     RC4PPS = 0x15;
-[e = _RC4PPS -> -> 21 `i `uc ]
+[; ;initialize.c: 96:     SSP1CLKPPS = 0x13;
+[e = _SSP1CLKPPS -> -> 19 `i `uc ]
 "97
-[; ;initialize.c: 97:     SSP1DATPPS = 0x14;
-[e = _SSP1DATPPS -> -> 20 `i `uc ]
+[; ;initialize.c: 97:     RC3PPS = 0x14;
+[e = _RC3PPS -> -> 20 `i `uc ]
+"98
+[; ;initialize.c: 98:     RC4PPS = 0x15;
+[e = _RC4PPS -> -> 21 `i `uc ]
 "99
-[; ;initialize.c: 99: }
+[; ;initialize.c: 99:     SSP1DATPPS = 0x14;
+[e = _SSP1DATPPS -> -> 20 `i `uc ]
+"101
+[; ;initialize.c: 101: }
 [e :UE 1565 ]
 }

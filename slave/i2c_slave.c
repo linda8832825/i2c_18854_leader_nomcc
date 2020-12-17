@@ -2,8 +2,6 @@
 #include "pic16f18854.h"
 #include "init_slave.h"
 
-
-
 uint8_t z;//用來清空SSP1BUF
 uint8_t leader_id,leader_single;//用來驗證mode(master)傳的資料正不正確
 
@@ -22,26 +20,25 @@ void __interrupt() I2C_Slave_Read(){
         while(!SSP1STATbits.BF); //當SSP1SUF滿時
         leader_id = SSP1BUF;//接收自己的id
         SSP1CON1bits.CKP = 1;//在一進中斷的時候設為0，拉伸clk，現在接收完slave的id後恢復scl的動作
+        
         while(!SSP1STATbits.BF); //當SSP1SUF滿時
         leader_single=SSP1BUF; //接收mode傳給leader的data
-        if(leader_single==0xBC) RA0=1;//data接收正確
-        if(leader_single==0xCE) RA1=1;//0xCE是自己的ID左移一位
-        if(leader_id==0xBC) RA2=1;
-        if(leader_id==0xCE) RA3=1;//leader id接收正確
         
-        if((RA0==1)&&(RA1==0)&&(RA2==0)&&(RA3==1)){//如果ID和DATA都正確的話
-            SSP1CON1bits.CKP = 1; //恢復SCL的動作
+        if(leader_single==0xBC){
+           RA0=1;//data接收正確
+           SSP1CON1bits.CKP = 1; //恢復SCL的動作
         }
     }
         
     else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW){//傳送mode的編號
         z = SSP1BUF;//清空SSP1BUF
         SSP1STATbits.BF = 0;//清空SSP1BUF
-        SSP1BUF = give_leader_ID; //傳編號給mode
+        SSP1BUF = give_mode_ID; //傳編號(0x5A)給mode
         SSP1CON1bits.CKP = 1; //恢復SCL的動作
         while(SSP1STATbits.BF);
-    }
-
+        RA6=1;
+        can_master=0xFF;
+    } 
     PIR3bits.SSP1IF = 0;//正在傳輸
     }
 }
