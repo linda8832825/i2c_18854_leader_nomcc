@@ -1610,6 +1610,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34907
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 34907: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
+"10 slave/init_slave.h
+[; ;slave/init_slave.h: 10: uint8_t can_master=0x00;
+[v _can_master `uc ~T0 @X0 1 e ]
+[i _can_master
+-> -> 0 `i `uc
+]
+"11
+[; ;slave/init_slave.h: 11: int n=0;
+[v _n `i ~T0 @X0 1 e ]
+[i _n
+-> 0 `i
+]
 "4 slave/init_slave.c
 [; ;slave/init_slave.c: 4: void slave_init(uint8_t address){
 [v _slave_init `(v ~T0 @X0 1 ef1`uc ]
@@ -1660,6 +1672,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;slave/init_slave.c: 18:     PIE3bits.BCL1IE = 1;
 [e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
 "19
-[; ;slave/init_slave.c: 19: }
+[; ;slave/init_slave.c: 19:     n=0;
+[e = _n -> 0 `i ]
+"20
+[; ;slave/init_slave.c: 20: }
 [e :UE 1562 ]
 }

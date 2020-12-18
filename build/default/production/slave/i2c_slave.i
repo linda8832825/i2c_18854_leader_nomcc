@@ -19759,9 +19759,11 @@ extern __bank0 __bit __timeout;
 
 
 void slave_init(uint8_t address);
+
+
+uint8_t can_master=0x00;
+int n=0;
 # 3 "slave/i2c_slave.c" 2
-
-
 
 
 uint8_t z;
@@ -19782,26 +19784,25 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
         while(!SSP1STATbits.BF);
         leader_id = SSP1BUF;
         SSP1CON1bits.CKP = 1;
+
         while(!SSP1STATbits.BF);
         leader_single=SSP1BUF;
-        if(leader_single==0xBC) RA0=1;
-        if(leader_single==0xCE) RA1=1;
-        if(leader_id==0xBC) RA2=1;
-        if(leader_id==0xCE) RA3=1;
 
-        if((RA0==1)&&(RA1==0)&&(RA2==0)&&(RA3==1)){
-            SSP1CON1bits.CKP = 1;
+        if(leader_single==0xBC){
+           RA0=1;
+           SSP1CON1bits.CKP = 1;
         }
     }
 
     else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW){
         z = SSP1BUF;
         SSP1STATbits.BF = 0;
-        SSP1BUF = 0xDB;
+        SSP1BUF = 0x5A;
         SSP1CON1bits.CKP = 1;
         while(SSP1STATbits.BF);
+        RA6=1;
+        can_master=0xFF;
     }
-
     PIR3bits.SSP1IF = 0;
     }
 }

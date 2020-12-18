@@ -16,4 +16,5 @@ void slave_init(uint8_t address){
     PIR3bits.BCL1IF = 0;//未檢測到衝突
     PIE3bits.SSP1IE = 1;//允許中斷
     PIE3bits.BCL1IE = 1;//衝突允許中斷
+    n=0;
 }

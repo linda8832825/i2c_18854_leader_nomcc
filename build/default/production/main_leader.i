@@ -19789,7 +19789,13 @@ void master_init(void);
 
 
 
-uint8_t z,y;
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdbool.h" 1 3
+# 5 "./slave/i2c_slave.h" 2
+
+
+uint8_t z;
+uint8_t leader_id,leader_single;
+
 void __attribute__((picinterrupt(("")))) I2C_Slave_Read();
 # 5 "main_leader.c" 2
 
@@ -19801,6 +19807,10 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read();
 
 
 void slave_init(uint8_t address);
+
+
+uint8_t can_master=0x00;
+int n=0;
 # 6 "main_leader.c" 2
 
 
@@ -19811,28 +19821,28 @@ uint8_t mode_data=0x00;
 
 void main(void) {
     init();
+    PORTA=0x00;
     slave_init(0x67);
+# 25 "main_leader.c"
+    if(can_master==0xFF){
+        RA1=1;
+        for(int i=0;i<=4000;i++){
+            SSP1CON1bits.CKP = 0;
+        }
+        init();
+        master_init();
+
+
+        I2C_Master_Start();
+        I2C_Master_Write((0x5A << 1)|1);
+        mode_data=I2C_Master_Read(0);
+        I2C_Master_Stop();
 
 
 
 
-
-
-
-    master_init();
-
-
-
-    I2C_Master_Start();
-    I2C_Master_Write((0x5A << 1)|1);
-    mode_data=I2C_Master_Read(0);
-    I2C_Master_Stop();
-
-
-    if(mode_data==0xDB){
-        RA6=1;
-        RA7=0;
     }
+
 
     while(1);
 }
