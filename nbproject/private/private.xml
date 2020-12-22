@@ -5,6 +5,14 @@
         <group>
             <file>file:/C:/Users/linda/MPLABXProjects/i2c_18854_leader_nomcc.X/main_leader.c</file>
             <file>file:/C:/Users/linda/MPLABXProjects/i2c_18854_leader_nomcc.X/slave/i2c_slave.c</file>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            <file>file:/C:/Users/linda/MPLABXProjects/i2c_18854_leader_nomcc.X/master/i2c_master.c</file>
+            <file>file:/C:/Users/linda/MPLABXProjects/i2c_18854_leader_nomcc.X/slave/init_slave.h</file>
+>>>>>>> 708e9e4c4f8fe241aed553a51db79701e763acae
+>>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
         </group>
     </open-files>
 </project-private>

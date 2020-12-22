@@ -19758,6 +19758,10 @@ extern __bank0 __bit __timeout;
 
 
 void slave_init(uint8_t address);
+
+
+uint8_t can_master=0x00;
+int n=0;
 # 2 "slave/init_slave.c" 2
 
 
@@ -19776,4 +19780,5 @@ void slave_init(uint8_t address){
     PIR3bits.BCL1IF = 0;
     PIE3bits.SSP1IE = 1;
     PIE3bits.BCL1IE = 1;
+    n=0;
 }
