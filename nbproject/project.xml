@@ -13,8 +13,7 @@
             <sourceEncoding>Big5</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList>
-                <sourceRootElem>master</sourceRootElem>
-                <sourceRootElem>slave</sourceRootElem>
+                <sourceRootElem>.</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

@@ -19750,7 +19750,6 @@ extern __bank0 __bit __timeout;
 # 29 "C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\\pic\\include\\xc.h" 2 3
 # 1 "slave/i2c_slave.c" 2
 
-
 # 1 "slave/init_slave.h" 1
 
 
@@ -19759,9 +19758,21 @@ extern __bank0 __bit __timeout;
 
 
 void slave_init(uint8_t address);
+# 2 "slave/i2c_slave.c" 2
+
+# 1 "slave/i2c_slave.h" 1
+
+
+
+
+
+uint8_t z;
+uint8_t leader_id,leader_single;
+
+uint8_t can_be_master=0x00;
+
+void __attribute__((picinterrupt(("")))) I2C_Slave_Read();
 # 3 "slave/i2c_slave.c" 2
-
-
 
 
 uint8_t z;
@@ -19782,14 +19793,12 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
         while(!SSP1STATbits.BF);
         leader_id = SSP1BUF;
         SSP1CON1bits.CKP = 1;
+
         while(!SSP1STATbits.BF);
         leader_single=SSP1BUF;
         if(leader_single==0xBC) RA0=1;
-        if(leader_single==0xCE) RA1=1;
-        if(leader_id==0xBC) RA2=1;
-        if(leader_id==0xCE) RA3=1;
 
-        if((RA0==1)&&(RA1==0)&&(RA2==0)&&(RA3==1)){
+        if(RA0==1){
             SSP1CON1bits.CKP = 1;
         }
     }
@@ -19800,6 +19809,8 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
         SSP1BUF = 0xDB;
         SSP1CON1bits.CKP = 1;
         while(SSP1STATbits.BF);
+        RA1=1;
+        can_be_master=0x01;
     }
 
     PIR3bits.SSP1IF = 0;

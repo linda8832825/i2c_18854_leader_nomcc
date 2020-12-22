@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=initialize.c slave/i2c_slave.c slave/init_slave.c master/init_master.c master/i2c_master.c main_leader.c
+SOURCEFILES_QUOTED_IF_SPACED=initialize.c main_leader.c master/i2c_master.c master/init_master.c slave/i2c_slave.c slave/init_slave.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/initialize.p1 ${OBJECTDIR}/slave/i2c_slave.p1 ${OBJECTDIR}/slave/init_slave.p1 ${OBJECTDIR}/master/init_master.p1 ${OBJECTDIR}/master/i2c_master.p1 ${OBJECTDIR}/main_leader.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/initialize.p1.d ${OBJECTDIR}/slave/i2c_slave.p1.d ${OBJECTDIR}/slave/init_slave.p1.d ${OBJECTDIR}/master/init_master.p1.d ${OBJECTDIR}/master/i2c_master.p1.d ${OBJECTDIR}/main_leader.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/initialize.p1 ${OBJECTDIR}/main_leader.p1 ${OBJECTDIR}/master/i2c_master.p1 ${OBJECTDIR}/master/init_master.p1 ${OBJECTDIR}/slave/i2c_slave.p1 ${OBJECTDIR}/slave/init_slave.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/initialize.p1.d ${OBJECTDIR}/main_leader.p1.d ${OBJECTDIR}/master/i2c_master.p1.d ${OBJECTDIR}/master/init_master.p1.d ${OBJECTDIR}/slave/i2c_slave.p1.d ${OBJECTDIR}/slave/init_slave.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/initialize.p1 ${OBJECTDIR}/slave/i2c_slave.p1 ${OBJECTDIR}/slave/init_slave.p1 ${OBJECTDIR}/master/init_master.p1 ${OBJECTDIR}/master/i2c_master.p1 ${OBJECTDIR}/main_leader.p1
+OBJECTFILES=${OBJECTDIR}/initialize.p1 ${OBJECTDIR}/main_leader.p1 ${OBJECTDIR}/master/i2c_master.p1 ${OBJECTDIR}/master/init_master.p1 ${OBJECTDIR}/slave/i2c_slave.p1 ${OBJECTDIR}/slave/init_slave.p1
 
 # Source Files
-SOURCEFILES=initialize.c slave/i2c_slave.c slave/init_slave.c master/init_master.c master/i2c_master.c main_leader.c
+SOURCEFILES=initialize.c main_leader.c master/i2c_master.c master/init_master.c slave/i2c_slave.c slave/init_slave.c
 
 
 
@@ -102,6 +102,30 @@ ${OBJECTDIR}/initialize.p1: initialize.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/initialize.d ${OBJECTDIR}/initialize.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/initialize.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/main_leader.p1: main_leader.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/main_leader.p1.d 
+	@${RM} ${OBJECTDIR}/main_leader.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main_leader.p1 main_leader.c 
+	@-${MV} ${OBJECTDIR}/main_leader.d ${OBJECTDIR}/main_leader.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/main_leader.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/master/i2c_master.p1: master/i2c_master.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/master" 
+	@${RM} ${OBJECTDIR}/master/i2c_master.p1.d 
+	@${RM} ${OBJECTDIR}/master/i2c_master.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/master/i2c_master.p1 master/i2c_master.c 
+	@-${MV} ${OBJECTDIR}/master/i2c_master.d ${OBJECTDIR}/master/i2c_master.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/master/i2c_master.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/master/init_master.p1: master/init_master.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/master" 
+	@${RM} ${OBJECTDIR}/master/init_master.p1.d 
+	@${RM} ${OBJECTDIR}/master/init_master.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/master/init_master.p1 master/init_master.c 
+	@-${MV} ${OBJECTDIR}/master/init_master.d ${OBJECTDIR}/master/init_master.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/master/init_master.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 ${OBJECTDIR}/slave/i2c_slave.p1: slave/i2c_slave.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/slave" 
 	@${RM} ${OBJECTDIR}/slave/i2c_slave.p1.d 
@@ -118,30 +142,6 @@ ${OBJECTDIR}/slave/init_slave.p1: slave/init_slave.c  nbproject/Makefile-${CND_C
 	@-${MV} ${OBJECTDIR}/slave/init_slave.d ${OBJECTDIR}/slave/init_slave.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/slave/init_slave.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/master/init_master.p1: master/init_master.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/master" 
-	@${RM} ${OBJECTDIR}/master/init_master.p1.d 
-	@${RM} ${OBJECTDIR}/master/init_master.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/master/init_master.p1 master/init_master.c 
-	@-${MV} ${OBJECTDIR}/master/init_master.d ${OBJECTDIR}/master/init_master.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/master/init_master.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/master/i2c_master.p1: master/i2c_master.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/master" 
-	@${RM} ${OBJECTDIR}/master/i2c_master.p1.d 
-	@${RM} ${OBJECTDIR}/master/i2c_master.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/master/i2c_master.p1 master/i2c_master.c 
-	@-${MV} ${OBJECTDIR}/master/i2c_master.d ${OBJECTDIR}/master/i2c_master.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/master/i2c_master.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/main_leader.p1: main_leader.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/main_leader.p1.d 
-	@${RM} ${OBJECTDIR}/main_leader.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main_leader.p1 main_leader.c 
-	@-${MV} ${OBJECTDIR}/main_leader.d ${OBJECTDIR}/main_leader.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/main_leader.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 else
 ${OBJECTDIR}/initialize.p1: initialize.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -150,6 +150,30 @@ ${OBJECTDIR}/initialize.p1: initialize.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/initialize.p1 initialize.c 
 	@-${MV} ${OBJECTDIR}/initialize.d ${OBJECTDIR}/initialize.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/initialize.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/main_leader.p1: main_leader.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/main_leader.p1.d 
+	@${RM} ${OBJECTDIR}/main_leader.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main_leader.p1 main_leader.c 
+	@-${MV} ${OBJECTDIR}/main_leader.d ${OBJECTDIR}/main_leader.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/main_leader.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/master/i2c_master.p1: master/i2c_master.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/master" 
+	@${RM} ${OBJECTDIR}/master/i2c_master.p1.d 
+	@${RM} ${OBJECTDIR}/master/i2c_master.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/master/i2c_master.p1 master/i2c_master.c 
+	@-${MV} ${OBJECTDIR}/master/i2c_master.d ${OBJECTDIR}/master/i2c_master.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/master/i2c_master.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/master/init_master.p1: master/init_master.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/master" 
+	@${RM} ${OBJECTDIR}/master/init_master.p1.d 
+	@${RM} ${OBJECTDIR}/master/init_master.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/master/init_master.p1 master/init_master.c 
+	@-${MV} ${OBJECTDIR}/master/init_master.d ${OBJECTDIR}/master/init_master.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/master/init_master.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/slave/i2c_slave.p1: slave/i2c_slave.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/slave" 
@@ -166,30 +190,6 @@ ${OBJECTDIR}/slave/init_slave.p1: slave/init_slave.c  nbproject/Makefile-${CND_C
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/slave/init_slave.p1 slave/init_slave.c 
 	@-${MV} ${OBJECTDIR}/slave/init_slave.d ${OBJECTDIR}/slave/init_slave.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/slave/init_slave.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/master/init_master.p1: master/init_master.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/master" 
-	@${RM} ${OBJECTDIR}/master/init_master.p1.d 
-	@${RM} ${OBJECTDIR}/master/init_master.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/master/init_master.p1 master/init_master.c 
-	@-${MV} ${OBJECTDIR}/master/init_master.d ${OBJECTDIR}/master/init_master.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/master/init_master.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/master/i2c_master.p1: master/i2c_master.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/master" 
-	@${RM} ${OBJECTDIR}/master/i2c_master.p1.d 
-	@${RM} ${OBJECTDIR}/master/i2c_master.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/master/i2c_master.p1 master/i2c_master.c 
-	@-${MV} ${OBJECTDIR}/master/i2c_master.d ${OBJECTDIR}/master/i2c_master.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/master/i2c_master.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/main_leader.p1: main_leader.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/main_leader.p1.d 
-	@${RM} ${OBJECTDIR}/main_leader.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main_leader.p1 main_leader.c 
-	@-${MV} ${OBJECTDIR}/main_leader.d ${OBJECTDIR}/main_leader.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/main_leader.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 

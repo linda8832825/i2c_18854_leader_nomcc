@@ -1,4 +1,4 @@
-#include <pic16f18854.h>
+#include <xc.h>
 #include "init_slave.h"
 
 void slave_init(uint8_t address){

@@ -19,15 +19,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _SSP1CON3 `Vuc ~T0 @X0 0 e@402 ]
 "5236
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5236:     struct {
-[s S243 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S243 . DHEN AHEN SBCDE SDAHT BOEN SCIE PCIE ACKTIM ]
+[s S248 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S248 . DHEN AHEN SBCDE SDAHT BOEN SCIE PCIE ACKTIM ]
 "5235
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5235: typedef union {
-[u S242 `S243 1 ]
-[n S242 . . ]
+[u S247 `S248 1 ]
+[n S247 . . ]
 "5247
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5247: extern volatile SSP1CON3bits_t SSP1CON3bits __attribute__((address(0x192)));
-[v _SSP1CON3bits `VS242 ~T0 @X0 0 e@402 ]
+[v _SSP1CON3bits `VS247 ~T0 @X0 0 e@402 ]
 "4349
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4349: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
 [v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
@@ -39,26 +39,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _PEIE `Vb ~T0 @X0 0 e@94 ]
 "21157
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 21157:     struct {
-[s S962 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S962 . SSP1IF BCL1IF SSP2IF BCL2IF TXIF RCIF ]
+[s S967 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S967 . SSP1IF BCL1IF SSP2IF BCL2IF TXIF RCIF ]
 "21156
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 21156: typedef union {
-[u S961 `S962 1 ]
-[n S961 . . ]
+[u S966 `S967 1 ]
+[n S966 . . ]
 "21166
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 21166: extern volatile PIR3bits_t PIR3bits __attribute__((address(0x70F)));
-[v _PIR3bits `VS961 ~T0 @X0 0 e@1807 ]
+[v _PIR3bits `VS966 ~T0 @X0 0 e@1807 ]
 "21579
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 21579:     struct {
-[s S981 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S981 . SSP1IE BCL1IE SSP2IE BCL2IE TXIE RCIE ]
+[s S986 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S986 . SSP1IE BCL1IE SSP2IE BCL2IE TXIE RCIE ]
 "21578
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 21578: typedef union {
-[u S980 `S981 1 ]
-[n S980 . . ]
+[u S985 `S986 1 ]
+[n S985 . . ]
 "21588
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 21588: extern volatile PIE3bits_t PIE3bits __attribute__((address(0x719)));
-[v _PIE3bits `VS980 ~T0 @X0 0 e@1817 ]
+[v _PIE3bits `VS985 ~T0 @X0 0 e@1817 ]
 "55 C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">

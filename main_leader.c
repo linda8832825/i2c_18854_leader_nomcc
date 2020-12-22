@@ -19,23 +19,31 @@ void main(void) {
     
     //傳編號給MODE
     
-    //要加判斷才能到下一步
     
-    //切換成MASTER
-    master_init();
     
-    //跟mode(slave)要資料(0xDB)
     
-    I2C_Master_Start(); 
-    I2C_Master_Write((MODE_ID << 1)|1); //7 bit address + Read(1)
-    mode_data=I2C_Master_Read(0);//接收leader要定義的編號
-    I2C_Master_Stop();
+
     
-    //驗證接收到的資料是否正確
-    if(mode_data==0xDB){
-        RA6=1;
-        RA7=0;
+//    //驗證接收到的資料是否正確
+//    if(mode_data==0xDB){
+//        RA6=1;
+//        RA7=0;
+//    }
+    
+    while(1){
+    while(can_be_master==0x01){
+        RA3=1;
+        
+        ///////////////////////////////////////////////////////////////////要拉住ckp等mode轉換成slave 這邊在轉成master嗎???????????????????????
+        //切換成MASTER
+        master_init();
+
+        //跟mode(slave)要資料(0xDB)
+        I2C_Master_Start(); 
+        I2C_Master_Write((MODE_ID << 1)|1); //7 bit address + Read(1)
+        mode_data=I2C_Master_Read(0);//接收leader要定義的編號
+        I2C_Master_Stop();
     }
     
-    while(1);
+    }
 }

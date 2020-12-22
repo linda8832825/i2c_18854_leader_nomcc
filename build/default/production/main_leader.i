@@ -19789,7 +19789,12 @@ void master_init(void);
 
 
 
-uint8_t z,y;
+
+uint8_t z;
+uint8_t leader_id,leader_single;
+
+uint8_t can_be_master=0x00;
+
 void __attribute__((picinterrupt(("")))) I2C_Slave_Read();
 # 5 "main_leader.c" 2
 
@@ -19812,27 +19817,20 @@ uint8_t mode_data=0x00;
 void main(void) {
     init();
     slave_init(0x67);
+# 33 "main_leader.c"
+    while(1){
+    while(can_be_master==0x01){
+        RA3=1;
 
 
+        master_init();
 
 
-
-
-
-    master_init();
-
-
-
-    I2C_Master_Start();
-    I2C_Master_Write((0x5A << 1)|1);
-    mode_data=I2C_Master_Read(0);
-    I2C_Master_Stop();
-
-
-    if(mode_data==0xDB){
-        RA6=1;
-        RA7=0;
+        I2C_Master_Start();
+        I2C_Master_Write((0x5A << 1)|1);
+        mode_data=I2C_Master_Read(0);
+        I2C_Master_Stop();
     }
 
-    while(1);
+    }
 }
