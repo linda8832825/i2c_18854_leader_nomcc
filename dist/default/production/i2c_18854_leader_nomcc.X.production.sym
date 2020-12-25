@@ -1,25 +1,13 @@
-_n 70 0 COMMON 1
-_z 75 0 COMMON 1
+_z 77 0 COMMON 1
 _RA0 60 0 ABS 0
 _RA1 61 0 ABS 0
-<<<<<<< HEAD
 _RA3 63 0 ABS 0
-__S0 141 0 ABS 0
-__S1 7A 0 ABS 0
-=======
-_RA6 66 0 ABS 0
-__S0 15C 0 ABS 0
-__S1 7E 0 ABS 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__S0 142 0 ABS 0
+__S1 7D 0 ABS 0
 __S2 0 0 ABS 0
 __S3 0 0 ABS 0
-_GIE 5F 0 ABS 0
 _SSP1STATbits 18F 0 ABS 0
-<<<<<<< HEAD
-__Hintentry 61 0 CODE 0
-=======
-__Hintentry 5E 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__Hintentry 5C 0 CODE 0
 __Lintentry 4 0 CODE 0
 __size_of_slave_init 0 0 ABS 0
 __pintentry 4 0 CODE 0
@@ -30,33 +18,19 @@ _PMD3 799 0 ABS 0
 _PMD4 79A 0 ABS 0
 _PMD5 79B 0 ABS 0
 _LATA 16 0 ABS 0
-_PEIE 5E 0 ABS 0
 _LATB 17 0 ABS 0
 _LATC 18 0 ABS 0
 _WPUA F39 0 ABS 0
-<<<<<<< HEAD
-__end_of_init 124 0 CODE 0
+__end_of_init 125 0 CODE 0
 _WPUB F44 0 ABS 0
 _WPUC F4F 0 ABS 0
 _WPUE F65 0 ABS 0
-__end_of_PIN_MANAGER_Initialize 9B 0 CODE 0
-_main 9B 0 CODE 0
+__end_of_PIN_MANAGER_Initialize 9A 0 CODE 0
+_main 9A 0 CODE 0
 ___sp 0 0 STACK 2
 btemp 7E 0 ABS 0
-_init 11A 0 CODE 0
-start 61 0 CODE 0
-=======
-__end_of_init 13F 0 CODE 0
-_WPUB F44 0 ABS 0
-_WPUC F4F 0 ABS 0
-_WPUE F65 0 ABS 0
-__end_of_PIN_MANAGER_Initialize DA 0 CODE 0
-_main 6B 0 CODE 0
-___sp 0 0 STACK 2
-btemp 7E 0 ABS 0
-_init 135 0 CODE 0
-start 5E 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+_init 11B 0 CODE 0
+start 5C 0 CODE 0
 _TRISA 11 0 ABS 0
 _TRISB 12 0 ABS 0
 _TRISC 13 0 ABS 0
@@ -65,12 +39,7 @@ reset_vec 0 0 CODE 0
 _OSCEN 891 0 ABS 0
 wtemp0 7E 0 ABS 0
 __size_of_init 0 0 ABS 0
-<<<<<<< HEAD
-_I2C_Master_Stop 135 0 CODE 0
-=======
-_I2C_Master_Stop 150 0 CODE 0
-main@i 7C 0 COMMON 1
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+_I2C_Master_Stop 136 0 CODE 0
 __Hbigram 0 0 ABS 0
 __Lbigram 0 0 ABS 0
 __Hram 0 0 ABS 0
@@ -84,7 +53,7 @@ _PIE3bits 719 0 ABS 0
 __Heeprom_data 0 0 EEDATA 3
 __Leeprom_data 0 0 EEDATA 3
 _PIR3bits 70F 0 ABS 0
-_leader_id 74 0 COMMON 1
+_leader_id 76 0 COMMON 1
 ___int_sp 0 0 STACK 2
 _ANSELA F38 0 ABS 0
 _ANSELB F43 0 ABS 0
@@ -122,39 +91,21 @@ __Hsfr8 0 0 ABS 0
 __Lsfr8 0 0 ABS 0
 __Hsfr9 0 0 ABS 0
 __Lsfr9 0 0 ABS 0
-<<<<<<< HEAD
-__end_of_master_init 11A 0 CODE 0
-__end_of_I2C_Master_Read DE 0 CODE 0
+__end_of_master_init 11B 0 CODE 0
+__end_of_I2C_Master_Read DF 0 CODE 0
 __size_of_I2C_Master_Read 0 0 ABS 0
 ___stackhi 21EF 0 ABS 0
-__end_of_slave_init F5 0 CODE 0
+__end_of_slave_init F6 0 CODE 0
 __Hcode 0 0 ABS 0
 __Lcode 0 0 ABS 0
-__end_of_I2C_Master_Wait 10F 0 CODE 0
-__end_of_I2C_Master_Stop 13B 0 CODE 0
-__Hinit 61 0 CODE 0
-__Linit 61 0 CODE 0
-__end_of_main C1 0 CODE 0
+__end_of_I2C_Master_Wait 110 0 CODE 0
+__end_of_I2C_Master_Stop 13C 0 CODE 0
+__Hinit 5C 0 CODE 0
+__Linit 5C 0 CODE 0
+__end_of_main C2 0 CODE 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
-end_of_initialization 68 0 CODE 0
-=======
-__end_of_master_init 135 0 CODE 0
-__end_of_I2C_Master_Read F7 0 CODE 0
-__size_of_I2C_Master_Read 0 0 ABS 0
-___stackhi 21EF 0 ABS 0
-__end_of_slave_init 110 0 CODE 0
-__Hcode 0 0 ABS 0
-__Lcode 0 0 ABS 0
-__end_of_I2C_Master_Wait 12A 0 CODE 0
-__end_of_I2C_Master_Stop 156 0 CODE 0
-__Hinit 5E 0 CODE 0
-__Linit 5E 0 CODE 0
-__end_of_main AA 0 CODE 0
-__Htext 0 0 ABS 0
-__Ltext 0 0 ABS 0
-end_of_initialization 67 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+end_of_initialization 66 0 CODE 0
 ___stacklo 2000 0 ABS 0
 _OSCCON1 88D 0 ABS 0
 __Hsfr10 0 0 ABS 0
@@ -208,20 +159,12 @@ __Hsfr29 0 0 ABS 0
 __Lsfr29 0 0 ABS 0
 __Hstrings 0 0 ABS 0
 __Lstrings 0 0 ABS 0
-<<<<<<< HEAD
-_I2C_Master_Read C1 0 CODE 0
-=======
-_I2C_Master_Read DA 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+_I2C_Master_Read C2 0 CODE 0
 _SLRCONA F3B 0 ABS 0
 _SLRCONB F46 0 ABS 0
 _SLRCONC F51 0 ABS 0
 _SSP1BUF 18C 0 ABS 0
-<<<<<<< HEAD
-__end_of_I2C_Slave_Read 61 0 CODE 0
-=======
-__end_of_I2C_Slave_Read 5E 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__end_of_I2C_Slave_Read 5C 0 CODE 0
 _OSCTUNE 892 0 ABS 0
 _SSP1MSK 18E 0 ABS 0
 __Hbank0 0 0 ABS 0
@@ -247,74 +190,41 @@ __Hbank8 0 0 BANK8 1
 __Lbank8 0 0 BANK8 1
 __Hbank9 0 0 BANK9 1
 __Lbank9 0 0 BANK9 1
-<<<<<<< HEAD
-slave_init@address 76 0 COMMON 1
-__ptext1 DE 0 CODE 0
-__ptext2 10F 0 CODE 0
-__ptext3 11A 0 CODE 0
-__ptext4 12D 0 CODE 0
-__ptext5 6C 0 CODE 0
+slave_init@address 79 0 COMMON 1
+__ptext1 DF 0 CODE 0
+__ptext2 110 0 CODE 0
+__ptext3 11B 0 CODE 0
+__ptext4 12E 0 CODE 0
+__ptext5 6A 0 CODE 0
 __size_of_I2C_Master_Write 0 0 ABS 0
-__ptext6 124 0 CODE 0
-I2C_Master_Write@data 76 0 COMMON 1
-__ptext7 F5 0 CODE 0
-__ptext8 135 0 CODE 0
-__ptext9 13B 0 CODE 0
-=======
-slave_init@address 78 0 COMMON 1
-__ptext1 F7 0 CODE 0
-__ptext2 12A 0 CODE 0
-__ptext3 135 0 CODE 0
-__ptext4 148 0 CODE 0
-__ptext5 AA 0 CODE 0
-__size_of_I2C_Master_Write 0 0 ABS 0
-__ptext6 13F 0 CODE 0
-I2C_Master_Write@data 78 0 COMMON 1
-__ptext7 110 0 CODE 0
-__ptext8 150 0 CODE 0
-__ptext9 156 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__ptext6 125 0 CODE 0
+I2C_Master_Write@data 79 0 COMMON 1
+__ptext7 F6 0 CODE 0
+__ptext8 136 0 CODE 0
+__ptext9 13C 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
 _SSP1CLKPPS EC5 0 ABS 0
 _SSP1DATPPS EC6 0 ABS 0
-<<<<<<< HEAD
-__end_of__initialization 68 0 CODE 0
-_master_init 10F 0 CODE 0
+__end_of__initialization 66 0 CODE 0
+_master_init 110 0 CODE 0
 __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
-__Hspace_0 141 0 ABS 0
-=======
-__end_of__initialization 67 0 CODE 0
-_master_init 12A 0 CODE 0
-__Hstack 0 0 STACK 2
-__Lstack 0 0 STACK 2
-__Hspace_0 15C 0 ABS 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__Hspace_0 142 0 ABS 0
 __Lspace_0 0 0 ABS 0
 _I2C_Slave_Read 4 0 CODE 0
-__Hspace_1 7E 0 ABS 0
+__Hspace_1 7D 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __size_of_I2C_Master_Start 0 0 ABS 0
 __Hspace_2 0 0 ABS 0
 __Lspace_2 0 0 ABS 0
-<<<<<<< HEAD
-__Hcinit 6C 0 CODE 0
-__Lcinit 63 0 CODE 0
-__end_of_PMD_Initialize 135 0 CODE 0
+__Hcinit 6A 0 CODE 0
+__Lcinit 5E 0 CODE 0
+__end_of_PMD_Initialize 136 0 CODE 0
 __Hspace_3 0 0 ABS 0
 __Lspace_3 0 0 ABS 0
 __size_of_main 0 0 ABS 0
-_PIN_MANAGER_Initialize 6C 0 CODE 0
-=======
-__Hcinit 6B 0 CODE 0
-__Lcinit 60 0 CODE 0
-__end_of_PMD_Initialize 150 0 CODE 0
-__Hspace_3 0 0 ABS 0
-__Lspace_3 0 0 ABS 0
-__size_of_main 0 0 ABS 0
-_PIN_MANAGER_Initialize AA 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+_PIN_MANAGER_Initialize 6A 0 CODE 0
 _SSP1CON1 190 0 ABS 0
 __Hbank10 0 0 BANK10 1
 __Lbank10 0 0 BANK10 1
@@ -328,13 +238,8 @@ __Lbank11 0 0 BANK11 1
 __Hbank21 0 0 BANK21 1
 __Lbank21 0 0 BANK21 1
 _SSP1CON3 192 0 ABS 0
-<<<<<<< HEAD
-__end_of_OSCILLATOR_Initialize 12D 0 CODE 0
-_I2C_Master_Start 13B 0 CODE 0
-=======
-__end_of_OSCILLATOR_Initialize 148 0 CODE 0
-_I2C_Master_Start 156 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__end_of_OSCILLATOR_Initialize 12E 0 CODE 0
+_I2C_Master_Start 13C 0 CODE 0
 __Hbank31 0 0 BANK31 1
 __Hbank12 0 0 BANK12 1
 __Lbank31 0 0 BANK31 1
@@ -349,20 +254,12 @@ __Hbank14 0 0 BANK14 1
 __Lbank14 0 0 BANK14 1
 __Hbank24 0 0 BANK24 1
 __Lbank24 0 0 BANK24 1
-<<<<<<< HEAD
-__ptext10 C1 0 CODE 0
-=======
-__ptext10 DA 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__ptext10 C2 0 CODE 0
 __Hbank15 0 0 BANK15 1
 __Lbank15 0 0 BANK15 1
 __Hbank25 0 0 BANK25 1
 __Lbank25 0 0 BANK25 1
-<<<<<<< HEAD
-__ptext11 103 0 CODE 0
-=======
-__ptext11 11E 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__ptext11 104 0 CODE 0
 __Hbank16 0 0 BANK16 1
 __Lbank16 0 0 BANK16 1
 __Hbank26 0 0 BANK26 1
@@ -380,44 +277,27 @@ __Lbank19 0 0 BANK19 1
 __Hbank29 0 0 BANK29 1
 __Lbank29 0 0 BANK29 1
 __size_of_PMD_Initialize 0 0 ABS 0
-I2C_Master_Read@get 79 0 COMMON 1
-_can_master 76 0 COMMON 1
+I2C_Master_Read@get 7A 0 COMMON 1
 __size_of_master_init 0 0 ABS 0
 __HbssCOMMON 0 0 ABS 0
 __LbssCOMMON 0 0 ABS 0
-_leader_single 73 0 COMMON 1
+_leader_single 75 0 COMMON 1
 __pbssCOMMON 70 0 COMMON 1
-<<<<<<< HEAD
-I2C_Master_Read@temp 78 0 COMMON 1
-__Hend_init 63 0 CODE 0
-__Lend_init 61 0 CODE 0
-_slave_init DE 0 CODE 0
-_PMD_Initialize 12D 0 CODE 0
-_OSCILLATOR_Initialize 124 0 CODE 0
+_INTCONbits B 0 ABS 0
+I2C_Master_Read@temp 7B 0 COMMON 1
+__Hend_init 5E 0 CODE 0
+__Lend_init 5C 0 CODE 0
+_slave_init DF 0 CODE 0
+_PMD_Initialize 12E 0 CODE 0
+_OSCILLATOR_Initialize 125 0 CODE 0
 __Hreset_vec 2 0 CODE 0
 __Lreset_vec 0 0 CODE 0
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0
-_I2C_Master_Write F5 0 CODE 0
+_I2C_Master_Write F6 0 CODE 0
 intlevel0 0 0 ENTRY 0
 _SSP1STAT 18F 0 ABS 0
 intlevel1 0 0 ENTRY 0
-__end_of_I2C_Master_Write 103 0 CODE 0
-=======
-I2C_Master_Read@temp 7A 0 COMMON 1
-__Hend_init 60 0 CODE 0
-__Lend_init 5E 0 CODE 0
-_slave_init F7 0 CODE 0
-_PMD_Initialize 148 0 CODE 0
-_OSCILLATOR_Initialize 13F 0 CODE 0
-__Hreset_vec 2 0 CODE 0
-__Lreset_vec 0 0 CODE 0
-__size_of_PIN_MANAGER_Initialize 0 0 ABS 0
-_I2C_Master_Write 110 0 CODE 0
-intlevel0 0 0 ENTRY 0
-_SSP1STAT 18F 0 ABS 0
-intlevel1 0 0 ENTRY 0
-__end_of_I2C_Master_Write 11E 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+__end_of_I2C_Master_Write 104 0 CODE 0
 intlevel2 0 0 ENTRY 0
 intlevel3 0 0 ENTRY 0
 intlevel4 0 0 ENTRY 0
@@ -425,351 +305,183 @@ _SSP1CON1bits 190 0 ABS 0
 intlevel5 0 0 ENTRY 0
 _SSP1CON2bits 191 0 ABS 0
 _SSP1CON3bits 192 0 ABS 0
-<<<<<<< HEAD
-_I2C_Master_Wait 103 0 CODE 0
+_I2C_Master_Wait 104 0 CODE 0
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
-__pcstackCOMMON 75 0 COMMON 1
-start_initialization 63 0 CODE 0
-__end_of_I2C_Master_Start 141 0 CODE 0
-_can_be_master 71 0 COMMON 1
+__pcstackCOMMON 78 0 COMMON 1
+start_initialization 5E 0 CODE 0
+__end_of_I2C_Master_Start 142 0 CODE 0
+_can_be_master 74 0 COMMON 1
 __Hmaintext 0 0 ABS 0
 __Lmaintext 0 0 ABS 0
-__pmaintext 9B 0 CODE 0
+__pmaintext 9A 0 CODE 0
 __size_of_OSCILLATOR_Initialize 0 0 ABS 0
-__initialization 63 0 CODE 0
+__initialization 5E 0 CODE 0
 %segments
 reset_vec 0 3 CODE 0 0
-intentry 8 281 CODE 8 0
-bssCOMMON 70 79 COMMON 70 1
+intentry 8 283 CODE 8 0
+bssCOMMON 70 7C COMMON 70 1
 %locals
 dist/default/production\i2c_18854_leader_nomcc.X.production.o
-C:\Users\linda\AppData\Local\Temp\sc9g.s
-7477 63 0 CODE 0
-7480 63 0 CODE 0
-7504 63 0 CODE 0
-7505 64 0 CODE 0
-7506 65 0 CODE 0
-7507 66 0 CODE 0
-7508 67 0 CODE 0
-7514 68 0 CODE 0
-7516 68 0 CODE 0
-7517 69 0 CODE 0
-7518 6A 0 CODE 0
+C:\Users\linda\AppData\Local\Temp\s4r8.s
+7477 5E 0 CODE 0
+7480 5E 0 CODE 0
+7510 5E 0 CODE 0
+7511 5F 0 CODE 0
+7512 60 0 CODE 0
+7513 61 0 CODE 0
+7514 62 0 CODE 0
+7515 63 0 CODE 0
+7516 64 0 CODE 0
+7517 65 0 CODE 0
+7523 66 0 CODE 0
+7525 66 0 CODE 0
+7526 67 0 CODE 0
+7527 68 0 CODE 0
 main_leader.c
-13 9B 0 CODE 0
-14 9B 0 CODE 0
-15 9E 0 CODE 0
-34 A3 0 CODE 0
-35 A3 0 CODE 0
-38 A5 0 CODE 0
-41 A8 0 CODE 0
-42 AB 0 CODE 0
-43 AF 0 CODE 0
-44 B6 0 CODE 0
-34 B9 0 CODE 0
+13 9A 0 CODE 0
+14 9A 0 CODE 0
+15 9D 0 CODE 0
+16 9F 0 CODE 0
+23 A4 0 CODE 0
+24 A4 0 CODE 0
+27 A6 0 CODE 0
+30 A9 0 CODE 0
+31 AC 0 CODE 0
+32 B0 0 CODE 0
+33 B7 0 CODE 0
+23 BA 0 CODE 0
 slave/init_slave.c
-4 DE 0 CODE 0
-5 DF 0 CODE 0
-6 E2 0 CODE 0
-7 E4 0 CODE 0
-8 E6 0 CODE 0
-9 E8 0 CODE 0
-10 EA 0 CODE 0
-11 EB 0 CODE 0
-12 EC 0 CODE 0
-13 ED 0 CODE 0
-14 EE 0 CODE 0
-15 EF 0 CODE 0
-16 F1 0 CODE 0
-17 F2 0 CODE 0
-18 F3 0 CODE 0
-19 F4 0 CODE 0
-master/init_master.c
-4 10F 0 CODE 0
-5 10F 0 CODE 0
-6 112 0 CODE 0
-7 113 0 CODE 0
-8 114 0 CODE 0
-9 115 0 CODE 0
-10 117 0 CODE 0
-11 119 0 CODE 0
-initialize.c
-4 11A 0 CODE 0
-6 11A 0 CODE 0
-7 11D 0 CODE 0
-8 120 0 CODE 0
-9 123 0 CODE 0
-25 12D 0 CODE 0
-28 12D 0 CODE 0
-30 12F 0 CODE 0
-32 130 0 CODE 0
-34 131 0 CODE 0
-36 132 0 CODE 0
-38 133 0 CODE 0
-39 134 0 CODE 0
-41 6C 0 CODE 0
-46 6C 0 CODE 0
-47 6E 0 CODE 0
-48 6F 0 CODE 0
-53 70 0 CODE 0
-54 71 0 CODE 0
-55 73 0 CODE 0
-60 75 0 CODE 0
-61 78 0 CODE 0
-62 7A 0 CODE 0
-67 7B 0 CODE 0
-68 7C 0 CODE 0
-69 7D 0 CODE 0
-70 7E 0 CODE 0
-75 7F 0 CODE 0
-76 80 0 CODE 0
-77 81 0 CODE 0
-82 82 0 CODE 0
-83 84 0 CODE 0
-84 86 0 CODE 0
-89 88 0 CODE 0
-90 89 0 CODE 0
-91 8B 0 CODE 0
-92 8D 0 CODE 0
-94 8F 0 CODE 0
-95 92 0 CODE 0
-96 95 0 CODE 0
-97 97 0 CODE 0
-99 9A 0 CODE 0
-11 124 0 CODE 0
-14 124 0 CODE 0
-16 127 0 CODE 0
-18 128 0 CODE 0
-20 129 0 CODE 0
-22 12B 0 CODE 0
-23 12C 0 CODE 0
-master/i2c_master.c
+4 DF 0 CODE 0
+5 E0 0 CODE 0
+6 E3 0 CODE 0
+7 E5 0 CODE 0
+8 E7 0 CODE 0
+9 E9 0 CODE 0
+10 EB 0 CODE 0
+11 EC 0 CODE 0
+12 ED 0 CODE 0
+13 EE 0 CODE 0
+14 EF 0 CODE 0
+15 F0 0 CODE 0
+16 F2 0 CODE 0
+17 F3 0 CODE 0
+18 F4 0 CODE 0
 19 F5 0 CODE 0
-20 F6 0 CODE 0
-21 F9 0 CODE 0
-22 FC 0 CODE 0
-23 101 0 CODE 0
-24 102 0 CODE 0
-15 135 0 CODE 0
-16 135 0 CODE 0
-17 138 0 CODE 0
-18 13A 0 CODE 0
-7 13B 0 CODE 0
-8 13B 0 CODE 0
-9 13E 0 CODE 0
-10 140 0 CODE 0
-25 C1 0 CODE 0
-27 C2 0 CODE 0
-28 C5 0 CODE 0
-29 C7 0 CODE 0
-30 CA 0 CODE 0
-31 CF 0 CODE 0
-32 D2 0 CODE 0
-33 DB 0 CODE 0
-34 DC 0 CODE 0
-35 DD 0 CODE 0
-4 103 0 CODE 0
-5 103 0 CODE 0
-6 10E 0 CODE 0
-=======
-_I2C_Master_Wait 11E 0 CODE 0
-__HcstackCOMMON 0 0 ABS 0
-__LcstackCOMMON 0 0 ABS 0
-__pcstackCOMMON 77 0 COMMON 1
-start_initialization 60 0 CODE 0
-__end_of_I2C_Master_Start 15C 0 CODE 0
-__Hmaintext 0 0 ABS 0
-__Lmaintext 0 0 ABS 0
-__pmaintext 6B 0 CODE 0
-__size_of_OSCILLATOR_Initialize 0 0 ABS 0
-__initialization 60 0 CODE 0
-%segments
-reset_vec 0 3 CODE 0 0
-intentry 8 2B7 CODE 8 0
-bssCOMMON 70 7D COMMON 70 1
-%locals
-dist/default/production\i2c_18854_leader_nomcc.X.production.o
-C:\Users\linda\AppData\Local\Temp\s1dc.s
-7480 60 0 CODE 0
-7483 60 0 CODE 0
-7510 60 0 CODE 0
-7511 61 0 CODE 0
-7512 62 0 CODE 0
-7513 63 0 CODE 0
-7514 64 0 CODE 0
-7515 65 0 CODE 0
-7516 66 0 CODE 0
-7522 67 0 CODE 0
-7524 67 0 CODE 0
-7525 68 0 CODE 0
-7526 69 0 CODE 0
-main_leader.c
-13 6B 0 CODE 0
-14 6B 0 CODE 0
-15 6E 0 CODE 0
-16 70 0 CODE 0
-25 74 0 CODE 0
-26 79 0 CODE 0
-27 7B 0 CODE 0
-28 7D 0 CODE 0
-29 7F 0 CODE 0
-30 90 0 CODE 0
-31 93 0 CODE 0
-34 96 0 CODE 0
-35 99 0 CODE 0
-36 9D 0 CODE 0
-37 A4 0 CODE 0
-45 A7 0 CODE 0
-slave/init_slave.c
-4 F7 0 CODE 0
-5 F8 0 CODE 0
-6 FB 0 CODE 0
-7 FD 0 CODE 0
-8 FF 0 CODE 0
-9 101 0 CODE 0
-10 103 0 CODE 0
-11 104 0 CODE 0
-12 105 0 CODE 0
-13 106 0 CODE 0
-14 107 0 CODE 0
-15 108 0 CODE 0
-16 10A 0 CODE 0
-17 10B 0 CODE 0
-18 10C 0 CODE 0
-19 10D 0 CODE 0
-20 10F 0 CODE 0
 master/init_master.c
-4 12A 0 CODE 0
-5 12A 0 CODE 0
-6 12D 0 CODE 0
-7 12E 0 CODE 0
-8 12F 0 CODE 0
-9 130 0 CODE 0
-10 132 0 CODE 0
-11 134 0 CODE 0
+4 110 0 CODE 0
+5 110 0 CODE 0
+6 113 0 CODE 0
+7 114 0 CODE 0
+8 115 0 CODE 0
+9 116 0 CODE 0
+10 118 0 CODE 0
+11 11A 0 CODE 0
 initialize.c
-4 135 0 CODE 0
-6 135 0 CODE 0
-7 138 0 CODE 0
-8 13B 0 CODE 0
-9 13E 0 CODE 0
-25 148 0 CODE 0
-28 148 0 CODE 0
-30 14A 0 CODE 0
-32 14B 0 CODE 0
-34 14C 0 CODE 0
-36 14D 0 CODE 0
-38 14E 0 CODE 0
-39 14F 0 CODE 0
-41 AA 0 CODE 0
-43 AA 0 CODE 0
-48 AC 0 CODE 0
-49 AD 0 CODE 0
-50 AE 0 CODE 0
-55 AF 0 CODE 0
-56 B0 0 CODE 0
-57 B2 0 CODE 0
-62 B4 0 CODE 0
-63 B7 0 CODE 0
-64 B9 0 CODE 0
-69 BA 0 CODE 0
-70 BB 0 CODE 0
-71 BC 0 CODE 0
-72 BD 0 CODE 0
-77 BE 0 CODE 0
-78 BF 0 CODE 0
-79 C0 0 CODE 0
-84 C1 0 CODE 0
-85 C3 0 CODE 0
-86 C5 0 CODE 0
-91 C7 0 CODE 0
-92 C8 0 CODE 0
-93 CA 0 CODE 0
-94 CC 0 CODE 0
-96 CE 0 CODE 0
-97 D1 0 CODE 0
-98 D4 0 CODE 0
-99 D6 0 CODE 0
-101 D9 0 CODE 0
-11 13F 0 CODE 0
-14 13F 0 CODE 0
-16 142 0 CODE 0
-18 143 0 CODE 0
-20 144 0 CODE 0
-22 146 0 CODE 0
-23 147 0 CODE 0
+4 11B 0 CODE 0
+6 11B 0 CODE 0
+7 11E 0 CODE 0
+8 121 0 CODE 0
+9 124 0 CODE 0
+25 12E 0 CODE 0
+28 12E 0 CODE 0
+30 130 0 CODE 0
+32 131 0 CODE 0
+34 132 0 CODE 0
+36 133 0 CODE 0
+38 134 0 CODE 0
+39 135 0 CODE 0
+41 6A 0 CODE 0
+43 6A 0 CODE 0
+48 6C 0 CODE 0
+49 6D 0 CODE 0
+50 6E 0 CODE 0
+55 6F 0 CODE 0
+56 70 0 CODE 0
+57 72 0 CODE 0
+62 74 0 CODE 0
+63 77 0 CODE 0
+64 79 0 CODE 0
+69 7A 0 CODE 0
+70 7B 0 CODE 0
+71 7C 0 CODE 0
+72 7D 0 CODE 0
+77 7E 0 CODE 0
+78 7F 0 CODE 0
+79 80 0 CODE 0
+84 81 0 CODE 0
+85 83 0 CODE 0
+86 85 0 CODE 0
+91 87 0 CODE 0
+92 88 0 CODE 0
+93 8A 0 CODE 0
+94 8C 0 CODE 0
+96 8E 0 CODE 0
+97 91 0 CODE 0
+98 94 0 CODE 0
+99 96 0 CODE 0
+101 99 0 CODE 0
+11 125 0 CODE 0
+14 125 0 CODE 0
+16 128 0 CODE 0
+18 129 0 CODE 0
+20 12A 0 CODE 0
+22 12C 0 CODE 0
+23 12D 0 CODE 0
 master/i2c_master.c
-19 110 0 CODE 0
-20 111 0 CODE 0
-21 114 0 CODE 0
-22 117 0 CODE 0
-23 11C 0 CODE 0
-24 11D 0 CODE 0
-15 150 0 CODE 0
-16 150 0 CODE 0
-17 153 0 CODE 0
-18 155 0 CODE 0
-7 156 0 CODE 0
-8 156 0 CODE 0
-9 159 0 CODE 0
-10 15B 0 CODE 0
-25 DA 0 CODE 0
-27 DB 0 CODE 0
-28 DE 0 CODE 0
-29 E0 0 CODE 0
-30 E3 0 CODE 0
-31 E8 0 CODE 0
-32 EB 0 CODE 0
-33 F4 0 CODE 0
-34 F5 0 CODE 0
-35 F6 0 CODE 0
-4 11E 0 CODE 0
-5 11E 0 CODE 0
-6 129 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+19 F6 0 CODE 0
+20 F7 0 CODE 0
+21 FA 0 CODE 0
+22 FD 0 CODE 0
+23 102 0 CODE 0
+24 103 0 CODE 0
+15 136 0 CODE 0
+16 136 0 CODE 0
+17 139 0 CODE 0
+18 13B 0 CODE 0
+7 13C 0 CODE 0
+8 13C 0 CODE 0
+9 13F 0 CODE 0
+10 141 0 CODE 0
+25 C2 0 CODE 0
+27 C3 0 CODE 0
+28 C6 0 CODE 0
+29 C8 0 CODE 0
+30 CB 0 CODE 0
+31 D0 0 CODE 0
+32 D3 0 CODE 0
+33 DC 0 CODE 0
+34 DD 0 CODE 0
+35 DE 0 CODE 0
+4 104 0 CODE 0
+5 104 0 CODE 0
+6 10F 0 CODE 0
 slave/i2c_slave.c
-8 4 0 CODE 0
-9 6 0 CODE 0
-10 B 0 CODE 0
-12 D 0 CODE 0
-13 15 0 CODE 0
-14 19 0 CODE 0
-15 1A 0 CODE 0
-16 1B 0 CODE 0
-19 1C 0 CODE 0
-20 24 0 CODE 0
-21 28 0 CODE 0
-22 2C 0 CODE 0
-24 2D 0 CODE 0
-25 31 0 CODE 0
-<<<<<<< HEAD
-26 35 0 CODE 0
-28 3D 0 CODE 0
-29 42 0 CODE 0
-33 45 0 CODE 0
-34 4D 0 CODE 0
-35 51 0 CODE 0
-36 52 0 CODE 0
-37 54 0 CODE 0
-38 55 0 CODE 0
-39 59 0 CODE 0
-40 5B 0 CODE 0
-41 5D 0 CODE 0
-43 5D 0 CODE 0
-45 5F 0 CODE 0
-=======
-27 35 0 CODE 0
-28 3B 0 CODE 0
-29 3D 0 CODE 0
-33 40 0 CODE 0
-34 48 0 CODE 0
-35 4C 0 CODE 0
-36 4D 0 CODE 0
-37 4F 0 CODE 0
-38 50 0 CODE 0
-39 54 0 CODE 0
-40 56 0 CODE 0
-42 5A 0 CODE 0
-44 5C 0 CODE 0
->>>>>>> 2d05a753400345485d2bc8fb3f7e5c0c2d4b96be
+9 4 0 CODE 0
+10 6 0 CODE 0
+11 B 0 CODE 0
+13 D 0 CODE 0
+14 15 0 CODE 0
+15 19 0 CODE 0
+16 1A 0 CODE 0
+17 1B 0 CODE 0
+20 1C 0 CODE 0
+21 24 0 CODE 0
+22 28 0 CODE 0
+23 2C 0 CODE 0
+25 2D 0 CODE 0
+26 31 0 CODE 0
+28 35 0 CODE 0
+29 3B 0 CODE 0
+30 3D 0 CODE 0
+34 40 0 CODE 0
+35 48 0 CODE 0
+36 4C 0 CODE 0
+37 4D 0 CODE 0
+38 4F 0 CODE 0
+39 50 0 CODE 0
+40 54 0 CODE 0
+41 56 0 CODE 0
+42 58 0 CODE 0
+44 58 0 CODE 0
+48 5A 0 CODE 0

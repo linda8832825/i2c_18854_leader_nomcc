@@ -31,12 +31,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4349
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4349: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
 [v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
-"37262
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 37262: extern volatile __bit GIE __attribute__((address(0x5F)));
-[v _GIE `Vb ~T0 @X0 0 e@95 ]
-"39344
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 39344: extern volatile __bit PEIE __attribute__((address(0x5E)));
-[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+"358
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 358:     struct {
+[s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . INTEDG . PEIE GIE ]
+"357
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 357: typedef union {
+[u S30 `S31 1 ]
+[n S30 . . ]
+"365
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 365: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
 "21157
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 21157:     struct {
 [s S967 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -1639,8 +1644,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;slave/init_slave.c: 7:     SSP1MSK = 0xFF;
 [e = _SSP1MSK -> -> 255 `i `uc ]
 "8
-[; ;slave/init_slave.c: 8:     SSP1CON1 = 0x26;
-[e = _SSP1CON1 -> -> 38 `i `uc ]
+[; ;slave/init_slave.c: 8:     SSP1CON1 = 0x36;
+[e = _SSP1CON1 -> -> 54 `i `uc ]
 "9
 [; ;slave/init_slave.c: 9:     SSP1CON2 = 0x01;
 [e = _SSP1CON2 -> -> 1 `i `uc ]
@@ -1654,11 +1659,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;slave/init_slave.c: 12:     SSP1BUF = 0x00;
 [e = _SSP1BUF -> -> 0 `i `uc ]
 "13
-[; ;slave/init_slave.c: 13:     GIE = 1;
-[e = _GIE -> -> 1 `i `b ]
+[; ;slave/init_slave.c: 13:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
 "14
-[; ;slave/init_slave.c: 14:     PEIE = 1;
-[e = _PEIE -> -> 1 `i `b ]
+[; ;slave/init_slave.c: 14:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
 "15
 [; ;slave/init_slave.c: 15:     PIR3bits.SSP1IF = 0;
 [e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
@@ -1672,9 +1677,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;slave/init_slave.c: 18:     PIE3bits.BCL1IE = 1;
 [e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
 "19
-[; ;slave/init_slave.c: 19:     n=0;
-[e = _n -> 0 `i ]
-"20
-[; ;slave/init_slave.c: 20: }
+[; ;slave/init_slave.c: 19: }
 [e :UE 1562 ]
 }
