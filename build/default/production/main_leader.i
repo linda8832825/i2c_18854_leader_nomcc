@@ -19828,23 +19828,9 @@ void main(void) {
 
     while(1){
         while(can_be_master==0x01){
-            RA3=1;
-
-
+            init();
             master_init();
-
-
-            I2C_Master_Start();
-            I2C_Master_Write((0x5A << 1)|1);
-            mode_data=I2C_Master_Read(0);
-            I2C_Master_Stop();
-
-
-
-
-
+# 39 "main_leader.c"
         }
-
-
     }
 }

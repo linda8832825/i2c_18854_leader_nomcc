@@ -19766,6 +19766,12 @@ int n=0;
 
 
 void slave_init(uint8_t address){
+    INTCONbits.GIE = 1;
+    INTCONbits.PEIE = 1;
+    PIR3bits.SSP1IF = 0;
+    PIR3bits.BCL1IF = 0;
+    PIE3bits.SSP1IE = 1;
+    PIE3bits.BCL1IE = 1;
     SSP1STAT = 0xC0;
     SSP1ADD = (uint8_t)(address<<1);
     SSP1MSK = 0xFF;
@@ -19774,10 +19780,4 @@ void slave_init(uint8_t address){
     SSP1CON3 = 0x00;
     SSP1CON3bits.BOEN=1;
     SSP1BUF = 0x00;
-    INTCONbits.GIE = 1;
-    INTCONbits.PEIE = 1;
-    PIR3bits.SSP1IF = 0;
-    PIR3bits.BCL1IF = 0;
-    PIE3bits.SSP1IE = 1;
-    PIE3bits.BCL1IE = 1;
 }

@@ -1,7 +1,7 @@
 
 Memory Summary:
-    Program space        used   140h (   320) of  1000h words   (  7.8%)
-    Data space           used     Fh (    15) of   200h bytes   (  2.9%)
+    Program space        used    FAh (   250) of  1000h words   (  6.1%)
+    Data space           used     Ch (    12) of   200h bytes   (  2.3%)
     EEPROM space         used     0h (     0) of   100h bytes   (  0.0%)
     Configuration bits   used     0h (     0) of     5h words   (  0.0%)
     ID Location space    used     0h (     0) of     4h bytes   (  0.0%)

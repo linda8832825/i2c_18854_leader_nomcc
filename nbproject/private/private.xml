@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/Users/linda/MPLABXProjects/i2c_18854_leader_nomcc.X/main_leader.c</file>
             <file>file:/C:/Users/linda/MPLABXProjects/i2c_18854_leader_nomcc.X/slave/i2c_slave.c</file>
+            <file>file:/C:/Users/linda/MPLABXProjects/i2c_18854_leader_nomcc.X/master/init_master.c</file>
         </group>
     </open-files>
 </project-private>

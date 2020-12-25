@@ -21,23 +21,21 @@ void main(void) {
     
     while(1){
         while(can_be_master==0x01){
-            RA3=1;
-            
-            
+            init();
             master_init();
-             
-            //跟mode(slave)要資料(0xDB)
-            I2C_Master_Start(); 
-            I2C_Master_Write((MODE_ID << 1)|1); //7 bit address + Read(1)
-            mode_data=I2C_Master_Read(0);//接收mode傳來的資料
-            I2C_Master_Stop();
+//            do{
+//                if(SSP1STATbits.P==1) RA5=1;
+                //跟mode(slave)要資料(0xDB)
+//                I2C_Master_Start(); 
+//                I2C_Master_Write((MODE_ID << 1)|1); //7 bit address + Read(1)
+//                mode_data=I2C_Master_Read(0);//接收mode傳來的資料
+//                I2C_Master_Stop();
 
 //                //驗證接收到的資料是否正確
 //                if(mode_data==0xDB) RA4=1;
 //                else RA5=1;
+//            }while(mode_data!=0xDB);
             
         }
-        
-
     }
 }
