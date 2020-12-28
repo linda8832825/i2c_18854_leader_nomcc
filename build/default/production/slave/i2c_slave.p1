@@ -1697,44 +1697,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _I2C_Slave_Read ]
 [f ]
-"10
-[; ;slave/i2c_slave.c: 10:     if(PIR3bits.SSP1IF == 1){
+"11
+[; ;slave/i2c_slave.c: 11:     if(PIR3bits.SSP1IF == 1){
 [e $ ! == -> . . _PIR3bits 0 0 `i -> 1 `i 1563  ]
 {
-"11
-[; ;slave/i2c_slave.c: 11:         SSP1CON1bits.CKP = 0;
+"12
+[; ;slave/i2c_slave.c: 12:         SSP1CON1bits.CKP = 0;
 [e = . . _SSP1CON1bits 0 1 -> -> 0 `i `uc ]
-"13
-[; ;slave/i2c_slave.c: 13:         if ((SSP1CON1bits.SSPOV) || (SSP1CON1bits.WCOL)){
+"14
+[; ;slave/i2c_slave.c: 14:         if ((SSP1CON1bits.SSPOV) || (SSP1CON1bits.WCOL)){
 [e $ ! || != -> . . _SSP1CON1bits 0 3 `i -> 0 `i != -> . . _SSP1CON1bits 0 4 `i -> 0 `i 1564  ]
 {
-"14
-[; ;slave/i2c_slave.c: 14:             z = SSP1BUF;
-[e = _z _SSP1BUF ]
 "15
-[; ;slave/i2c_slave.c: 15:             SSP1CON1bits.SSPOV = 0;
-[e = . . _SSP1CON1bits 0 3 -> -> 0 `i `uc ]
+[; ;slave/i2c_slave.c: 15:             z = SSP1BUF;
+[e = _z _SSP1BUF ]
 "16
-[; ;slave/i2c_slave.c: 16:             SSP1CON1bits.WCOL = 0;
-[e = . . _SSP1CON1bits 0 4 -> -> 0 `i `uc ]
+[; ;slave/i2c_slave.c: 16:             SSP1CON1bits.SSPOV = 0;
+[e = . . _SSP1CON1bits 0 3 -> -> 0 `i `uc ]
 "17
-[; ;slave/i2c_slave.c: 17:             SSP1CON1bits.CKP = 1;
-[e = . . _SSP1CON1bits 0 1 -> -> 1 `i `uc ]
+[; ;slave/i2c_slave.c: 17:             SSP1CON1bits.WCOL = 0;
+[e = . . _SSP1CON1bits 0 4 -> -> 0 `i `uc ]
 "18
-[; ;slave/i2c_slave.c: 18:         }
+[; ;slave/i2c_slave.c: 18:             SSP1CON1bits.CKP = 1;
+[e = . . _SSP1CON1bits 0 1 -> -> 1 `i `uc ]
+"19
+[; ;slave/i2c_slave.c: 19:         }
 }
-[e :U 1564 ]
+[e $U 1565  ]
 "20
-[; ;slave/i2c_slave.c: 20:         if(!SSP1STATbits.D_nA && !SSP1STATbits.R_nW){
-[e $ ! && ! != -> . . _SSP1STATbits 0 5 `i -> 0 `i ! != -> . . _SSP1STATbits 0 2 `i -> 0 `i 1565  ]
+[; ;slave/i2c_slave.c: 20:         else if(!SSP1STATbits.D_nA && !SSP1STATbits.R_nW){
+[e :U 1564 ]
+[e $ ! && ! != -> . . _SSP1STATbits 0 5 `i -> 0 `i ! != -> . . _SSP1STATbits 0 2 `i -> 0 `i 1566  ]
 {
 "21
 [; ;slave/i2c_slave.c: 21:             while(!SSP1STATbits.BF);
-[e $U 1566  ]
-[e :U 1567 ]
-[e :U 1566 ]
-[e $ ! != -> . . _SSP1STATbits 0 0 `i -> 0 `i 1567  ]
+[e $U 1567  ]
 [e :U 1568 ]
+[e :U 1567 ]
+[e $ ! != -> . . _SSP1STATbits 0 0 `i -> 0 `i 1568  ]
+[e :U 1569 ]
 "22
 [; ;slave/i2c_slave.c: 22:             leader_id = SSP1BUF;
 [e = _leader_id _SSP1BUF ]
@@ -1743,17 +1744,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _SSP1CON1bits 0 1 -> -> 1 `i `uc ]
 "25
 [; ;slave/i2c_slave.c: 25:             while(!SSP1STATbits.BF);
-[e $U 1569  ]
-[e :U 1570 ]
-[e :U 1569 ]
-[e $ ! != -> . . _SSP1STATbits 0 0 `i -> 0 `i 1570  ]
+[e $U 1570  ]
 [e :U 1571 ]
+[e :U 1570 ]
+[e $ ! != -> . . _SSP1STATbits 0 0 `i -> 0 `i 1571  ]
+[e :U 1572 ]
 "26
 [; ;slave/i2c_slave.c: 26:             leader_single=SSP1BUF;
 [e = _leader_single _SSP1BUF ]
 "28
 [; ;slave/i2c_slave.c: 28:             if(leader_single==0xBC){
-[e $ ! == -> _leader_single `i -> 188 `i 1572  ]
+[e $ ! == -> _leader_single `i -> 188 `i 1573  ]
 {
 "29
 [; ;slave/i2c_slave.c: 29:                RA0=1;
@@ -1764,15 +1765,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31
 [; ;slave/i2c_slave.c: 31:             }
 }
-[e :U 1572 ]
+[e :U 1573 ]
 "32
 [; ;slave/i2c_slave.c: 32:         }
 }
-[e $U 1573  ]
+[e $U 1574  ]
 "34
-[; ;slave/i2c_slave.c: 34:         else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW){
-[e :U 1565 ]
-[e $ ! && ! != -> . . _SSP1STATbits 0 5 `i -> 0 `i != -> . . _SSP1STATbits 0 2 `i -> 0 `i 1574  ]
+[; ;slave/i2c_slave.c: 34:         else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW && (leader_single==0xBC)){
+[e :U 1566 ]
+[e $ ! && && ! != -> . . _SSP1STATbits 0 5 `i -> 0 `i != -> . . _SSP1STATbits 0 2 `i -> 0 `i == -> _leader_single `i -> 188 `i 1575  ]
 {
 "35
 [; ;slave/i2c_slave.c: 35:             z = SSP1BUF;
@@ -1788,11 +1789,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _SSP1CON1bits 0 1 -> -> 1 `i `uc ]
 "39
 [; ;slave/i2c_slave.c: 39:             while(SSP1STATbits.BF);
-[e $U 1575  ]
-[e :U 1576 ]
-[e :U 1575 ]
-[e $ != -> . . _SSP1STATbits 0 0 `i -> 0 `i 1576  ]
+[e $U 1576  ]
 [e :U 1577 ]
+[e :U 1576 ]
+[e $ != -> . . _SSP1STATbits 0 0 `i -> 0 `i 1577  ]
+[e :U 1578 ]
 "40
 [; ;slave/i2c_slave.c: 40:             RA1=1;
 [e = _RA1 -> -> 1 `i `b ]
@@ -1802,16 +1803,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "42
 [; ;slave/i2c_slave.c: 42:         }
 }
+[e :U 1575 ]
 [e :U 1574 ]
-[e :U 1573 ]
-"44
-[; ;slave/i2c_slave.c: 44:         PIR3bits.SSP1IF = 0;
+[e :U 1565 ]
+"43
+[; ;slave/i2c_slave.c: 43:         PIR3bits.SSP1IF = 0;
 [e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-"47
-[; ;slave/i2c_slave.c: 47:     }
+"44
+[; ;slave/i2c_slave.c: 44:     }
 }
 [e :U 1563 ]
-"48
-[; ;slave/i2c_slave.c: 48: }
+"45
+[; ;slave/i2c_slave.c: 45: }
 [e :UE 1562 ]
 }

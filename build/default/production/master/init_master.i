@@ -19761,10 +19761,21 @@ void master_init(void);
 
 
 void master_init(void){
-    SSP1CON1=0b00101000;
+    INTCONbits.GIE = 0;
+    INTCONbits.PEIE = 0;
+    PIR3bits.SSP1IF = 1;
+    PIR3bits.BCL1IF = 1;
+    PIE3bits.SSP1IE = 0;
+    PIE3bits.BCL1IE = 0;
+    SSP1CON1=0x00;
+    SSP1CON1=0x28;
     SSP1CON2=0x00;
+    SSP1CON3 = 0x00;
+    SSP1STAT=0x00;
+    SSP1BUF = 0x00;
     SSP1STATbits.SMP=1;
     SSP1STATbits.CKE=1;
     SSP1ADD=0x06;
     SSP1MSK=0xFF;
+    RA3=1;
 }

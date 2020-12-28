@@ -1,37 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"4559 C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4559: extern volatile unsigned char SSP1STAT __attribute__((address(0x18F)));
-[v _SSP1STAT `Vuc ~T0 @X0 0 e@399 ]
-"4369
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4369: extern volatile unsigned char SSP1ADD __attribute__((address(0x18D)));
-[v _SSP1ADD `Vuc ~T0 @X0 0 e@397 ]
-"4489
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4489: extern volatile unsigned char SSP1MSK __attribute__((address(0x18E)));
-[v _SSP1MSK `Vuc ~T0 @X0 0 e@398 ]
-"4923
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4923: extern volatile unsigned char SSP1CON1 __attribute__((address(0x190)));
-[v _SSP1CON1 `Vuc ~T0 @X0 0 e@400 ]
-"5043
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5043: extern volatile unsigned char SSP1CON2 __attribute__((address(0x191)));
-[v _SSP1CON2 `Vuc ~T0 @X0 0 e@401 ]
-"5230
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5230: extern volatile unsigned char SSP1CON3 __attribute__((address(0x192)));
-[v _SSP1CON3 `Vuc ~T0 @X0 0 e@402 ]
-"5236
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5236:     struct {
-[s S248 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S248 . DHEN AHEN SBCDE SDAHT BOEN SCIE PCIE ACKTIM ]
-"5235
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5235: typedef union {
-[u S247 `S248 1 ]
-[n S247 . . ]
-"5247
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5247: extern volatile SSP1CON3bits_t SSP1CON3bits __attribute__((address(0x192)));
-[v _SSP1CON3bits `VS247 ~T0 @X0 0 e@402 ]
-"4349
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4349: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
-[v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
-"358
+"358 C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 358:     struct {
 [s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S31 . INTEDG . PEIE GIE ]
@@ -64,6 +32,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 "21588
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 21588: extern volatile PIE3bits_t PIE3bits __attribute__((address(0x719)));
 [v _PIE3bits `VS985 ~T0 @X0 0 e@1817 ]
+"4559
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4559: extern volatile unsigned char SSP1STAT __attribute__((address(0x18F)));
+[v _SSP1STAT `Vuc ~T0 @X0 0 e@399 ]
+"4369
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4369: extern volatile unsigned char SSP1ADD __attribute__((address(0x18D)));
+[v _SSP1ADD `Vuc ~T0 @X0 0 e@397 ]
+"4489
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4489: extern volatile unsigned char SSP1MSK __attribute__((address(0x18E)));
+[v _SSP1MSK `Vuc ~T0 @X0 0 e@398 ]
+"4923
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4923: extern volatile unsigned char SSP1CON1 __attribute__((address(0x190)));
+[v _SSP1CON1 `Vuc ~T0 @X0 0 e@400 ]
+"5043
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5043: extern volatile unsigned char SSP1CON2 __attribute__((address(0x191)));
+[v _SSP1CON2 `Vuc ~T0 @X0 0 e@401 ]
+"5230
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5230: extern volatile unsigned char SSP1CON3 __attribute__((address(0x192)));
+[v _SSP1CON3 `Vuc ~T0 @X0 0 e@402 ]
+"5236
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5236:     struct {
+[s S248 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S248 . DHEN AHEN SBCDE SDAHT BOEN SCIE PCIE ACKTIM ]
+"5235
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5235: typedef union {
+[u S247 `S248 1 ]
+[n S247 . . ]
+"5247
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5247: extern volatile SSP1CON3bits_t SSP1CON3bits __attribute__((address(0x192)));
+[v _SSP1CON3bits `VS247 ~T0 @X0 0 e@402 ]
+"4349
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4349: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
+[v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
 "55 C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1635,47 +1635,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _address `uc ~T0 @X0 1 r1 ]
 [f ]
 "5
-[; ;slave/init_slave.c: 5:     SSP1STAT = 0xC0;
-[e = _SSP1STAT -> -> 192 `i `uc ]
-"6
-[; ;slave/init_slave.c: 6:     SSP1ADD = (uint8_t)(address<<1);
-[e = _SSP1ADD -> << -> _address `i -> 1 `i `uc ]
-"7
-[; ;slave/init_slave.c: 7:     SSP1MSK = 0xFF;
-[e = _SSP1MSK -> -> 255 `i `uc ]
-"8
-[; ;slave/init_slave.c: 8:     SSP1CON1 = 0x36;
-[e = _SSP1CON1 -> -> 54 `i `uc ]
-"9
-[; ;slave/init_slave.c: 9:     SSP1CON2 = 0x01;
-[e = _SSP1CON2 -> -> 1 `i `uc ]
-"10
-[; ;slave/init_slave.c: 10:     SSP1CON3 = 0x00;
-[e = _SSP1CON3 -> -> 0 `i `uc ]
-"11
-[; ;slave/init_slave.c: 11:     SSP1CON3bits.BOEN=1;
-[e = . . _SSP1CON3bits 0 4 -> -> 1 `i `uc ]
-"12
-[; ;slave/init_slave.c: 12:     SSP1BUF = 0x00;
-[e = _SSP1BUF -> -> 0 `i `uc ]
-"13
-[; ;slave/init_slave.c: 13:     INTCONbits.GIE = 1;
+[; ;slave/init_slave.c: 5:     INTCONbits.GIE = 1;
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"14
-[; ;slave/init_slave.c: 14:     INTCONbits.PEIE = 1;
+"6
+[; ;slave/init_slave.c: 6:     INTCONbits.PEIE = 1;
 [e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"15
-[; ;slave/init_slave.c: 15:     PIR3bits.SSP1IF = 0;
+"7
+[; ;slave/init_slave.c: 7:     PIR3bits.SSP1IF = 0;
 [e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-"16
-[; ;slave/init_slave.c: 16:     PIR3bits.BCL1IF = 0;
+"8
+[; ;slave/init_slave.c: 8:     PIR3bits.BCL1IF = 0;
 [e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
-"17
-[; ;slave/init_slave.c: 17:     PIE3bits.SSP1IE = 1;
+"9
+[; ;slave/init_slave.c: 9:     PIE3bits.SSP1IE = 1;
 [e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
-"18
-[; ;slave/init_slave.c: 18:     PIE3bits.BCL1IE = 1;
+"10
+[; ;slave/init_slave.c: 10:     PIE3bits.BCL1IE = 1;
 [e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
+"11
+[; ;slave/init_slave.c: 11:     SSP1STAT = 0xC0;
+[e = _SSP1STAT -> -> 192 `i `uc ]
+"12
+[; ;slave/init_slave.c: 12:     SSP1ADD = (uint8_t)(address<<1);
+[e = _SSP1ADD -> << -> _address `i -> 1 `i `uc ]
+"13
+[; ;slave/init_slave.c: 13:     SSP1MSK = 0xFF;
+[e = _SSP1MSK -> -> 255 `i `uc ]
+"14
+[; ;slave/init_slave.c: 14:     SSP1CON1 = 0x36;
+[e = _SSP1CON1 -> -> 54 `i `uc ]
+"15
+[; ;slave/init_slave.c: 15:     SSP1CON2 = 0x81;
+[e = _SSP1CON2 -> -> 129 `i `uc ]
+"16
+[; ;slave/init_slave.c: 16:     SSP1CON3 = 0x00;
+[e = _SSP1CON3 -> -> 0 `i `uc ]
+"17
+[; ;slave/init_slave.c: 17:     SSP1CON3bits.BOEN=1;
+[e = . . _SSP1CON3bits 0 4 -> -> 1 `i `uc ]
+"18
+[; ;slave/init_slave.c: 18:     SSP1BUF = 0x00;
+[e = _SSP1BUF -> -> 0 `i `uc ]
 "19
 [; ;slave/init_slave.c: 19: }
 [e :UE 1562 ]

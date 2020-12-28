@@ -19783,6 +19783,7 @@ uint8_t z;
 uint8_t leader_id,leader_single;
 
 void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
+
     if(PIR3bits.SSP1IF == 1){
         SSP1CON1bits.CKP = 0;
 
@@ -19792,8 +19793,7 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
             SSP1CON1bits.WCOL = 0;
             SSP1CON1bits.CKP = 1;
         }
-
-        if(!SSP1STATbits.D_nA && !SSP1STATbits.R_nW){
+        else if(!SSP1STATbits.D_nA && !SSP1STATbits.R_nW){
             while(!SSP1STATbits.BF);
             leader_id = SSP1BUF;
             SSP1CON1bits.CKP = 1;
@@ -19807,7 +19807,7 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
             }
         }
 
-        else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW){
+        else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW && (leader_single==0xBC)){
             z = SSP1BUF;
             SSP1STATbits.BF = 0;
             SSP1BUF = 0x5A;
@@ -19816,9 +19816,6 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
             RA1=1;
             can_be_master=0x01;
         }
-
         PIR3bits.SSP1IF = 0;
-
-
     }
 }
