@@ -1764,7 +1764,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 1574  ]
 "30
-[; ;slave/i2c_slave.c: 30:         else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW && (leader_single==0xBC)){
+[; ;slave/i2c_slave.c: 30:         else if((!SSP1STATbits.D_nA) && (SSP1STATbits.R_nW) && (leader_single==0xBC)){
 [e :U 1566 ]
 [e $ ! && && ! != -> . . _SSP1STATbits 0 5 `i -> 0 `i != -> . . _SSP1STATbits 0 2 `i -> 0 `i == -> _leader_single `i -> 188 `i 1575  ]
 {

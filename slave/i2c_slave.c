@@ -27,7 +27,7 @@ void __interrupt() I2C_Slave_Read(){
             }
         }
 
-        else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW && (leader_single==0xBC)){//傳送mode的編號
+        else if((!SSP1STATbits.D_nA) && (SSP1STATbits.R_nW) && (leader_single==0xBC)){//傳送mode的編號
             z = SSP1BUF;//清空SSP1BUF
             SSP1STATbits.BF = 0;//清空SSP1BUF
             SSP1BUF = give_mode_ID; //傳編號(0x5A)給mode

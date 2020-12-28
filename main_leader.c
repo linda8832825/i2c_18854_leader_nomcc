@@ -18,7 +18,7 @@ void main(void) {
         
         //接收mode傳來的信號
     
-        //傳編號給MODE
+        //傳編號給MODE //can_be_master==0x01
     }
     
     while(can_be_master==0x01){//master

@@ -19803,7 +19803,7 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
             }
         }
 
-        else if(!SSP1STATbits.D_nA && SSP1STATbits.R_nW && (leader_single==0xBC)){
+        else if((!SSP1STATbits.D_nA) && (SSP1STATbits.R_nW) && (leader_single==0xBC)){
             z = SSP1BUF;
             SSP1STATbits.BF = 0;
             SSP1BUF = 0x5A;
