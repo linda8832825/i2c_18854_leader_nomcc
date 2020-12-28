@@ -19827,10 +19827,14 @@ void main(void) {
 
 
     while(1){
-        while(can_be_master==0x01){
-            init();
-            master_init();
-# 39 "main_leader.c"
+        while(SSP1STATbits.S==1){
+            RA3=1;
+            RA3=0;
         }
+        while(SSP1STATbits.P==1){
+            RA4=1;
+            RA4=0;
+        }
+# 51 "main_leader.c"
     }
 }

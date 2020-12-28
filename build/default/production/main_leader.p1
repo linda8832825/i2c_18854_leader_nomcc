@@ -9,9 +9,79 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7 ./slave/init_slave.h
 [; ;./slave/init_slave.h: 7: void slave_init(uint8_t address);
 [v _slave_init `(v ~T0 @X0 0 ef1`uc ]
-"6 ./master/init_master.h
-[; ;./master/init_master.h: 6: void master_init(void);
-[v _master_init `(v ~T0 @X0 0 ef ]
+"39578 C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 39578: extern volatile __bit RA3 __attribute__((address(0x63)));
+[v _RA3 `Vb ~T0 @X0 0 e@99 ]
+"4565
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4565:     struct {
+[s S222 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S222 . BF UA R_nW S P D_nA CKE SMP ]
+"4575
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4575:     struct {
+[s S223 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S223 . . R_W . D_A ]
+"4581
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4581:     struct {
+[s S224 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S224 . . nW . nA ]
+"4587
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4587:     struct {
+[s S225 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S225 . . nWRITE . nADDRESS ]
+"4593
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4593:     struct {
+[s S226 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S226 . . READ_WRITE . DATA_ADDRESS ]
+"4599
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4599:     struct {
+[s S227 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S227 . . I2C_READ I2C_START I2C_STOP I2C_DAT ]
+"4606
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4606:     struct {
+[s S228 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S228 . BF1 UA1 R START STOP D CKE1 SMP1 ]
+"4616
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4616:     struct {
+[s S229 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S229 . . RW START1 STOP1 DA ]
+"4623
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4623:     struct {
+[s S230 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S230 . . RW1 I2C_START1 I2C_STOP2 DA1 ]
+"4630
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4630:     struct {
+[s S231 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S231 . . I2C_READ1 S2 P2 DATA_ADDRESS1 ]
+"4637
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4637:     struct {
+[s S232 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S232 . . READ_WRITE1 . D_A1 ]
+"4643
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4643:     struct {
+[s S233 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S233 . . R_W1 . D_nA1 ]
+"4649
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4649:     struct {
+[s S234 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S234 . . R_nW1 . I2C_DAT1 ]
+"4655
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4655:     struct {
+[s S235 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S235 . . nW2 . nA2 ]
+"4661
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4661:     struct {
+[s S236 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S236 . . nWRITE1 . nADDRESS1 ]
+"4564
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4564: typedef union {
+[u S221 `S222 1 `S223 1 `S224 1 `S225 1 `S226 1 `S227 1 `S228 1 `S229 1 `S230 1 `S231 1 `S232 1 `S233 1 `S234 1 `S235 1 `S236 1 ]
+[n S221 . . . . . . . . . . . . . . . . ]
+"4668
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4668: extern volatile SSP1STATbits_t SSP1STATbits __attribute__((address(0x18F)));
+[v _SSP1STATbits `VS221 ~T0 @X0 0 e@399 ]
+"39599
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 39599: extern volatile __bit RA4 __attribute__((address(0x64)));
+[v _RA4 `Vb ~T0 @X0 0 e@100 ]
 "55 C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1615,31 +1685,50 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 1564 ]
 {
 "23
-[; ;main_leader.c: 23:         while(can_be_master==0x01){
+[; ;main_leader.c: 23:         while(SSP1STATbits.S==1){
 [e $U 1566  ]
 [e :U 1567 ]
 {
 "24
-[; ;main_leader.c: 24:             init();
-[e ( _init ..  ]
+[; ;main_leader.c: 24:             RA3=1;
+[e = _RA3 -> -> 1 `i `b ]
 "25
-[; ;main_leader.c: 25:             master_init();
-[e ( _master_init ..  ]
-"39
-[; ;main_leader.c: 39:         }
+[; ;main_leader.c: 25:             RA3=0;
+[e = _RA3 -> -> 0 `i `b ]
+"26
+[; ;main_leader.c: 26:         }
 }
 [e :U 1566 ]
 "23
-[; ;main_leader.c: 23:         while(can_be_master==0x01){
-[e $ == -> _can_be_master `i -> 1 `i 1567  ]
+[; ;main_leader.c: 23:         while(SSP1STATbits.S==1){
+[e $ == -> . . _SSP1STATbits 0 3 `i -> 1 `i 1567  ]
 [e :U 1568 ]
-"40
-[; ;main_leader.c: 40:     }
+"27
+[; ;main_leader.c: 27:         while(SSP1STATbits.P==1){
+[e $U 1569  ]
+[e :U 1570 ]
+{
+"28
+[; ;main_leader.c: 28:             RA4=1;
+[e = _RA4 -> -> 1 `i `b ]
+"29
+[; ;main_leader.c: 29:             RA4=0;
+[e = _RA4 -> -> 0 `i `b ]
+"30
+[; ;main_leader.c: 30:         }
+}
+[e :U 1569 ]
+"27
+[; ;main_leader.c: 27:         while(SSP1STATbits.P==1){
+[e $ == -> . . _SSP1STATbits 0 4 `i -> 1 `i 1570  ]
+[e :U 1571 ]
+"51
+[; ;main_leader.c: 51:     }
 }
 [e :U 1563 ]
 [e $U 1564  ]
 [e :U 1565 ]
-"41
-[; ;main_leader.c: 41: }
+"52
+[; ;main_leader.c: 52: }
 [e :UE 1562 ]
 }
