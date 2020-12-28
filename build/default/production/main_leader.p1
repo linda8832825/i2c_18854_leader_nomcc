@@ -1671,21 +1671,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 1569 ]
 [e = _RA5 -> -> 1 `i `b ]
 [e :U 1570 ]
-"38
-[; ;main_leader.c: 38:     }
+"37
+[; ;main_leader.c: 37:     }
 }
 [e :U 1566 ]
 "24
 [; ;main_leader.c: 24:     while(can_be_master==0x01){
 [e $ == -> _can_be_master `i -> 1 `i 1567  ]
 [e :U 1568 ]
-"40
-[; ;main_leader.c: 40:     while(1);
+"39
+[; ;main_leader.c: 39:     while(1);
 [e :U 1572 ]
 [e :U 1571 ]
 [e $U 1572  ]
 [e :U 1573 ]
-"42
-[; ;main_leader.c: 42: }
+"41
+[; ;main_leader.c: 41: }
 [e :UE 1562 ]
 }

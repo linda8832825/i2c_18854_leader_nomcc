@@ -19778,10 +19778,6 @@ void __attribute__((picinterrupt(("")))) I2C_Slave_Read();
 # 3 "slave/i2c_slave.c" 2
 
 
-
-uint8_t z;
-uint8_t leader_id,leader_single;
-
 void __attribute__((picinterrupt(("")))) I2C_Slave_Read(){
 
     if(PIR3bits.SSP1IF == 1){

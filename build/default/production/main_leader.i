@@ -19841,7 +19841,6 @@ void main(void) {
 
         if(mode_data==0xDB) RA4=1;
         else RA5=1;
-
     }
 
     while(1);

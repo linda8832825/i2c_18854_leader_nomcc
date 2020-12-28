@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\i2c_18854_leader_nomcc.X.production.sym \
   --cmf=dist/default/production\i2c_18854_leader_nomcc.X.production.cmf -z \
-  -Q16F18854 -oC:\Users\linda\AppData\Local\Temp\sd2c.2 \
+  -Q16F18854 -oC:\Users\linda\AppData\Local\Temp\s5p8.3 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/i2c_18854_leader_nomcc.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02000h-021EFh -pstack=STACK \
@@ -31,7 +31,7 @@ Linker command line:
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\linda\AppData\Local\Temp\sd2c.o \
+  C:\Users\linda\AppData\Local\Temp\s5p8.o \
   dist/default/production\i2c_18854_leader_nomcc.X.production.o 
 
 Object code version is 3.11
@@ -41,7 +41,7 @@ Machine type is 16F18854
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\linda\AppData\Local\Temp\sd2c.o
+C:\Users\linda\AppData\Local\Temp\s5p8.o
                 end_init                             63       63        2        8       0
                 reset_vec                             0        0        2        0       0
 dist/default/production\i2c_18854_leader_nomcc.X.production.o
@@ -1012,7 +1012,7 @@ Total ram usage:        0 bytes
 
  *************** function _I2C_Slave_Read *****************
  Defined at:
-		line 9 in file "slave/i2c_slave.c"
+		line 5 in file "slave/i2c_slave.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

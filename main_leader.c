@@ -34,7 +34,6 @@ void main(void) {
         //驗證接收到的資料是否正確
         if(mode_data==0xDB) RA4=1;
         else RA5=1;
-            
     }
     
     while(1);

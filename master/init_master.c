@@ -1,7 +1,7 @@
 #include <xc.h>
 #include "init_master.h"
 
-void master_init(void){
+void master_init(void){//關掉中斷一定要放最前面
     INTCONbits.GIE = 0;//中斷不智能
     INTCONbits.PEIE = 0;//中斷不智能
     PIR3bits.SSP1IF = 1;//等待傳輸

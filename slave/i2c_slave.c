@@ -2,10 +2,6 @@
 #include "init_slave.h"
 #include "i2c_slave.h"
 
-
-uint8_t z;//用來清空SSP1BUF
-uint8_t leader_id,leader_single;//用來驗證mode(master)傳的資料正不正確
-
 void __interrupt() I2C_Slave_Read(){
      
     if(PIR3bits.SSP1IF == 1){//傳輸已完成
