@@ -19819,7 +19819,7 @@ uint8_t mode_data=0x00;
 
 void main(void) {
     init();
-    PORTA=0x00;
+
     while(can_be_master==0x00){
         slave_init(0x67);
 
